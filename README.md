@@ -1,7 +1,7 @@
 # DOSWIF
 # Network Attack Tool
 
-This is a simple Python tool designed for performing Distributed Denial of Service (DDoS) attacks on a specific target device or an entire network. The tool uses UDP flooding to overwhelm the target by sending a large number of packets to it.
+This is a simple Python tool designed for performing Distributed Denial of Service (DOS) attacks on a specific target device or an entire network. The tool uses UDP flooding to overwhelm the target by sending a large number of packets to it.
 
 ## Features:
 - **Attack a specific device**: Perform a DDoS attack on a specific target device by providing its IP and port.
