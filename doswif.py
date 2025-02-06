@@ -109,12 +109,12 @@ if __name__ == "__main__":
         network_ip = input("\033[0;36mEnter the network address (e.g., 192.168.1.0/24): \033[0m").strip()
         target_port = input("\033[0;36mEnter the target port (usually 80 or 443): \033[0m").strip()
 
-        # Check if the network IP includes "/24"
+        
         if not network_ip:
             print("\033[1;31mError: You must enter the network IP address.\033[0m")
         elif '/24' not in network_ip:
             print("\033[1;31mError: You must enter a network IP with /24 (e.g., 192.168.1.0/24).\033[0m")
-        elif not contains_three_dots(network_ip.split('/')[0]):  # Checking the IP part of the network address
+        elif not contains_three_dots(network_ip.split('/')[0]):  
             print("\033[1;31mError: The IP address in the network must contain exactly 3 dots (e.g., 192.168.1.0).\033[0m")
         elif not target_port:
             print("\033[1;31mError: You must enter the port.\033[0m")
