@@ -6,11 +6,11 @@ import ipaddress
 import os
 import sys
 
-# مسح الشاشة بالكامل (الخلفية)
-os.system('clear')  # يستخدم clear لمسح الشاشة في Termux أو أنظمة Linux
-# os.system('cls')  # استخدم cls إذا كنت على Windows
 
-# فحص إذا كان المستخدم يعمل بصلاحيات الروت
+os.system('clear')  
+
+
+
 if os.geteuid() != 0:
     print("\033[1;31mRun the program with root privileges!\033[0m")
     sys.exit(1)
