@@ -22,4 +22,4 @@ This is a simple Python tool designed for performing Distributed Denial of Servi
 This tool is intended for educational purposes and should only be used in environments where you have explicit permission to test the network. Unauthorized use of this tool on networks without permission is illegal and unethical.
 
 ## License:
-This tool is free for personal use and is not intended for commercial purposes.
+This tool is free for personal use and is not intended for commercial purposes. Please read the license file
