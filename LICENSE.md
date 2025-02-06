@@ -1,34 +1,27 @@
-# License - MIT License
+# Personal Use License  
 
-MIT License  
+## License Agreement  
 
-Copyright (c) 2025 BOYARB  
+This software is licensed for **personal and educational use only**.  
+By using this software, you agree to the following terms:  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:  
+### 1. **Restrictions**  
+- ❌ **No Commercial Use**: You are not allowed to sell, rent, or use this software for any commercial purposes.  
+- ❌ **No Modification**: You are not allowed to modify, reverse engineer, or distribute modified versions of this software.  
+- ❌ **No Redistribution**: You are not allowed to share, distribute, or publish this software in any form.  
+- ❌ **No Unauthorized Use**: You are not allowed to use this software for **any illegal or unethical activities**.  
 
-The above copyright notice and this permission notice shall be included in all  
-copies or substantial portions of the Software.  
+### 2. **Allowed Usage**  
+✔ **Personal Use**: You may use this software for personal and educational purposes only.  
+✔ **Learning and Testing**: You may study and test this software **in a controlled environment** where you have permission.  
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
-SOFTWARE.  
+### 3. **Disclaimer**  
+This software is provided **"AS IS"**, without any warranty of any kind. The author is **not responsible** for any misuse or damage caused by using this software.  
+Using this software **on networks or devices without explicit permission is illegal** and may result in legal consequences.  
+
+### 4. **Legal Notice**  
+Any violation of these terms **will be considered a breach of this license agreement**. The author reserves the right to take legal action if necessary.  
 
 ---
 
-## Restrictions  
-
-- This software is provided **for personal and educational use only**.  
-- **Commercial use is strictly prohibited**.  
-- The author is **not responsible for any misuse** of this tool.  
-- Unauthorized use of this software to attack networks without permission **is illegal**.  
-
-Use this software responsibly and ethically.
+📌 **By using this software, you agree to abide by these terms. If you do not agree, you must delete this software immediately.**
