@@ -11,9 +11,9 @@ def handle_ctrl_z(signal, frame):
     sys.exit(0)  
 
 def handle_ctrl_c(signal, frame):
-    sys.exit(0)  # الخروج من البرنامج دون أي إشعار عند الضغط على Ctrl + C
+    sys.exit(0)  
 
-# التعامل مع Ctrl + Z و Ctrl + C
+
 signal.signal(signal.SIGTSTP, handle_ctrl_z)
 signal.signal(signal.SIGINT, handle_ctrl_c)
 
