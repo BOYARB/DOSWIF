@@ -4,7 +4,15 @@ import multiprocessing
 import ipaddress
 import os
 import sys
+import signal
 
+# وظيفة للإشارة SIGTSTP
+def handle_ctrl_z(signal, frame):
+    print("\033[1;97mStopped\033[0m")  # اللون الأبيض الصاطع
+    sys.exit(0)  # إنهاء البرنامج بعد إظهار الرسالة
+
+# ربط الإشارة SIGTSTP إلى الوظيفة الخاصة بها
+signal.signal(signal.SIGTSTP, handle_ctrl_z)
 
 os.system('clear')  
 
