@@ -2,7 +2,7 @@
 # Network Attack Tool
 
 It is a tool designed to perform 
-Distributed Denial of Service(DOS) 
+Distributed Denial of Service (DOS)
 attacks on a specific target device 
 or an entire network. The tool uses 
 UDP flooding to flood the target by 
