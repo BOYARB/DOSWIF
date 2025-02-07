@@ -6,13 +6,16 @@ import os
 import sys
 import signal
 
-
 def handle_ctrl_z(signal, frame):
     print("\033[1;97mStopped\033[0m")  
     sys.exit(0)  
 
+def handle_ctrl_c(signal, frame):
+    sys.exit(0)  # الخروج من البرنامج دون أي إشعار عند الضغط على Ctrl + C
 
+# التعامل مع Ctrl + Z و Ctrl + C
 signal.signal(signal.SIGTSTP, handle_ctrl_z)
+signal.signal(signal.SIGINT, handle_ctrl_c)
 
 os.system('clear')  
 
