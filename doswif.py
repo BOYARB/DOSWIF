@@ -7,7 +7,7 @@ import sys
 import signal
 
 def handle_ctrl_z(signal, frame):
-    print("\n\033[1;97mStopped\033[0m")  
+    print("\033[1;97mStopped\033[0m", end="")  # طباعة الرسالة دون سطر فارغ
     sys.exit(0)
 
 def handle_ctrl_c(signal, frame):
