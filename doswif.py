@@ -128,5 +128,4 @@ if __name__ == "__main__":
             attack_network(network_ip, target_port)
 
     else:
-        print("\033[1;31mInvalid choice. Please enter 1 or 2.\033[0m")
-        
+        print("\033[1;31mInvalid choice. Please enter 1 or 2.\033[0m") 
