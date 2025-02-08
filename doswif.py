@@ -7,7 +7,7 @@ import sys
 import signal
 
 def handle_ctrl_z(signal, frame):
-    print("\n\033[1;97mStopped\033[0m")  # إضافة \n لجعل الرسالة تظهر في سطر جديد
+    print("\n\033[1;97mStopped\033[0m")  
     sys.exit(0)
 
 def handle_ctrl_c(signal, frame):
